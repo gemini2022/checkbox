@@ -1,0 +1,49 @@
+<label #checkbox
+       class="checkbox" 
+       [attr.disabled]="disabled"
+       [ngStyle]="{'height': containerHeight(),
+                   'cursor': containerCursor(),
+                   'margin': containerMargin(),
+                   'padding': containerPadding()}"
+       [ngClass]="{'no-hover-background': !showHover}">
+
+    <input #input type="checkbox"
+           [checked]="checked"
+           [disabled]="disabled"
+           (change)="onChange(input.checked)">
+
+
+    @if (labelPositionAfter) {
+        <div class="checkbox-border"
+             [ngStyle]="{'width': checkboxSize(),
+                         'height': checkboxSize(),
+                         'margin-right': _labelDistance}">
+
+            <div class="checkbox-background">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path [attr.d]="_checkmarkPath"></path>
+                </svg>
+            </div>
+        </div>
+    }
+
+    <div class="label-container"
+         [ngStyle]="{'font-size': labelFontSize(),
+                     'font-family': labelFontFamily()}">
+        <ng-content></ng-content>
+    </div>
+
+    @if (!labelPositionAfter) {
+        <div class="checkbox-border"
+             [ngStyle]="{'width': checkboxSize(),
+                         'height': checkboxSize(),
+                         'margin-left': _labelDistance}">
+
+            <div class="checkbox-background">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path [attr.d]="_checkmarkPath"></path>
+                </svg>
+            </div>
+        </div>
+    }
+</label>

@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CheckboxComponent } from '../../projects/checkbox/src/lib/checkbox/checkbox.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CheckboxComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Checkbox';
+  protected toppings = {
+    pepperoni: false,
+    extracheese: false,
+    mushrooms: false
+  }
 }

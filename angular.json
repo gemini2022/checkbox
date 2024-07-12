@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -94,6 +94,39 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "checkbox": {
+      "projectType": "library",
+      "root": "projects/checkbox",
+      "sourceRoot": "projects/checkbox/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/checkbox/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/checkbox/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/checkbox/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/checkbox/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }
