@@ -42,9 +42,19 @@
     --checkbox-border-color: #44474e;
     --checkbox-background-color: white;
 
-        /* Checked */
-        --checkbox-checked-border-color: #343dff;
-        --checkbox-checked-background-color: #343dff;
+
+    /* Label */
+    --checkbox-label-color: #1a1b1f;
+
+
+
+
+
+    /* ===================== (CHECKED COLORS) ===================== */
+
+    /* Checkbox */
+    --checkbox-checked-border-color: #343dff;
+    --checkbox-checked-background-color: #343dff;
 
 
     /* Checkmark */
@@ -52,10 +62,7 @@
 
 
     /* Label */
-    --checkbox-label-color: #1a1b1f;
-
-        /* Checked */
-        --checkbox-checked-label-color: #1a1b1f;
+    --checkbox-checked-label-color: #1a1b1f;
 
 
 
@@ -69,42 +76,37 @@
 
     /* Checkbox */
     --checkbox-border-hover-color: #1a1b1f;
-    --checkbox-background-hover-color: white;
+    --checkbox-background-hover-color: white;        
 
-        /* Checked */
-        --checkbox-checked-border-hover-color: #343dff;
-        --checkbox-checked-background-hover-color: #343dff;
 
-        /* Focused */
-        --checkbox-focused-border-hover-color: #343dff;
-        --checkbox-focused-background-hover-color: #343dff;
+    /* Label */
+    --checkbox-label-hover-color: #1a1b1f;        
+
+
+    /* Overlay */
+    --checkbox-overlay-hover-color: rgba(141, 136, 148, 0.1);
+        
+
+
+
+
+    /* ===================== (CHECKED HOVER COLORS) ===================== */
+
+    /* Checkbox */
+    --checkbox-checked-border-hover-color: #343dff;
+    --checkbox-checked-background-hover-color: #343dff;
 
 
     /* Checkmark */
     --checkbox-checkmark-hover-color: white;
 
-        /* Focused */
-        --checkbox-focused-checkmark-hover-color: white;
-
 
     /* Label */
-    --checkbox-label-hover-color: #1a1b1f;
-
-        /* Checked */
-        --checkbox-checked-label-hover-color: #1a1b1f;
-
-        /* Focused */
-        --checkbox-focused-label-hover-color: #1a1b1f;
+    --checkbox-checked-label-hover-color: #1a1b1f;
 
 
     /* Overlay */
-    --checkbox-overlay-hover-color: rgba(141, 136, 148, 0.1);
-
-        /* Checked */
-        --checkbox-checked-overlay-hover-color: rgba(145, 139, 255, 0.1);
-
-        /* Focused */
-        --checkbox-focused-overlay-hover-color: rgba(111, 109, 255, 0.19);
+    --checkbox-checked-overlay-hover-color: rgba(145, 139, 255, 0.1);
 
 
 
@@ -116,9 +118,23 @@
     --checkbox-border-active-color: #030303;
     --checkbox-background-active-color: white;
 
-        /* Checked */
-        --checkbox-checked-border-active-color: #343dff;
-        --checkbox-checked-background-active-color: #343dff;
+
+    /* Label */
+    --checkbox-label-active-color: #1a1b1f;
+
+
+    /* Overlay */
+    --checkbox-overlay-active-color: rgba(103, 101, 107, 0.22);
+
+
+
+
+
+    /* ===================== (CHECKED ACTIVE COLORS) ===================== */
+
+    /* Checkbox */
+    --checkbox-checked-border-active-color: #343dff;
+    --checkbox-checked-background-active-color: #343dff;
 
 
     /* Checkmark */
@@ -126,17 +142,11 @@
 
 
     /* Label */
-    --checkbox-label-active-color: #1a1b1f;
-
-        /* Checked */
-        --checkbox-checked-label-active-color: #1a1b1f;
+    --checkbox-checked-label-active-color: #1a1b1f;
 
 
     /* Overlay */
-    --checkbox-overlay-active-color: rgba(103, 101, 107, 0.22);
-
-        /* Checked */
-        --checkbox-checked-overlay-active-color: rgba(87, 87, 255, 0.30);
+    --checkbox-checked-overlay-active-color: rgba(87, 87, 255, 0.30);
 
 
 
@@ -147,14 +157,32 @@
     /* Overlay */
     --checkbox-overlay-focus-color: rgba(141, 136, 148, 0.1);
 
-        /* Checked */
-        --checkbox-checked-overlay-focus-color: rgba(111, 109, 255, 0.19);
 
 
+
+
+    /* ===================== (CHECKED FOCUS COLORS) ===================== */
+
+    /* Overlay */
+    --checkbox-checked-overlay-focus-color: rgba(111, 109, 255, 0.19);
+
+
+
+
+
+    /* ===================== (FOCUS VISIBLE COLORS) ===================== */
+
+    /* Overlay */
     --checkbox-overlay-focus-visible-color: rgba(111, 109, 255, 0.19);
 
-        /* Checked */
-        --checkbox-checked-overlay-focus-visible-color: rgba(111, 109, 255, 0.19);
+
+
+
+
+    /* ===================== (CHECKED FOCUS VISIBLE COLORS) ===================== */
+
+    /* Overlay */
+    --checkbox-checked-overlay-focus-visible-color: rgba(111, 109, 255, 0.19);
 
 
 
@@ -169,5 +197,4 @@
 
     /* Label */
     --checkbox-label-disabled-color: #a7aeb8;
-    
 }
