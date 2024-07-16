@@ -10,6 +10,7 @@
     <input #input type="checkbox"
            [checked]="checked"
            [disabled]="disabled"
+           class="checkbox-input"
            (change)="onChange(input.checked)">
 
 
@@ -27,7 +28,7 @@
         </div>
     }
 
-    <div class="label-container"
+    <div class="checkbox-label-container"
          [ngStyle]="{'font-size': labelFontSize(),
                      'font-family': labelFontFamily()}">
         <ng-content></ng-content>
