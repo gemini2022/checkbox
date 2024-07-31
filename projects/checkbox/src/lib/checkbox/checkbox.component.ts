@@ -111,7 +111,7 @@ export class CheckboxComponent implements ControlValueAccessor {
   private setCheckboxBorderRadius(): void {
     const borderRadius = this.checkboxBorderRadius() ? this.checkboxBorderRadius() : getComputedStyle(document.documentElement).getPropertyValue('--checkbox-border-radius');
     this.checkbox()?.nativeElement.style.setProperty('--border-radius', borderRadius!);
-    const backgroundBorderRadius = (parseInt(borderRadius!) / parseInt(this.borderWidth) + 'px');
+    const backgroundBorderRadius = (parseInt(borderRadius!) - parseInt(this.borderWidth) + 'px');
     this.checkbox()?.nativeElement.style.setProperty('--background-border-radius', backgroundBorderRadius!);
   }
 
